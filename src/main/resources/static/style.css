@@ -1,0 +1,172 @@
+body {
+    background: #F0F2F5;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    height:90px;
+    background:#0169d9;
+    top:0;
+    left:0;
+    color:white;
+    z-index:7;
+}
+
+.header-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-areas: ". logo welcome";
+    position: relative;
+    top: 17px;
+}
+
+.welcome {
+    display:flex;
+    grid-area: welcome;
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.logo {
+    display: flex;
+    grid-area: logo;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 65% auto;
+    grid-template-areas: ". body .";
+}
+div .body {
+    display: block;
+    grid-area: body;
+    width: 100%;
+    height: auto;
+}
+.post {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: white;
+    margin: 20px 0px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.btn {
+    position: relative;
+    float: right;
+    background: transparent;
+    border: none;
+    font-size: 1.1em;
+}
+
+.post-text {
+    color: #333333;
+    font-size: medium;
+    margin: 5px;
+}
+.date {
+    color: lightseagreen;
+    margin: 2px;
+}
+.edit {
+    background: cornflowerblue;
+    height: 25px;
+    width: 40px;
+    border-radius: 7px;
+    margin: 5px 2px;
+    border-style: none;
+}
+.delete {
+    background: lightcoral;
+    height: 25px;
+    width: 40px;
+    border-radius: 7px;
+    margin: 5px 2px;
+    border-style: none;
+}
+
+.post-field {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: white;
+    margin: 20px 0px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: medium;
+}
+
+.text-post {
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 50px;
+    background: #F0F2F5;
+    margin: 22px 0px;
+    border-radius: 40px;
+    padding: 8px;
+    font-size: medium;
+    border: none;
+}
+
+.post-block {
+    display: block;
+    width: 100%;
+    /*height: 100px;*/
+    background: white !important;
+    margin: 20px 0px;
+    border-radius: 20px;
+    padding: 3px;
+    font-size: medium;
+}
+
+::placeholder {
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.pad-left {
+    padding-left: 4%;
+}
+
+.pad-right {
+    position: relative;
+    float: right;
+    padding-right: 4%;
+}
+
+.pad-message {
+    padding: 0 4% 0 4%;
+}
+
+hr {
+    border: 1px solid #F0F2F5;
+    width: 95%;
+}
+
+.time {
+    font-size: 1em;
+    font-style: italic;
+    color: dimgrey;
+    padding-top: 8px;
+}
+
+.crud {
+    margin-left: 35px;
+    /*padding: 30px*/
+}
+
+.like {
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
