@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.text.ParseException;
 import java.util.Calendar;
 
 @SpringBootTest
@@ -23,22 +24,22 @@ class MiniFacebookCloneApplicationTests {
     void contextLoads() {
     }
 
-//    @Test
-//    void testCreate() throws ParseException {
-//        User user = new User();
-//
-//        Calendar cal = Calendar.getInstance();
-//        cal.set(1996, Calendar.SEPTEMBER, 12);
-//
-//        user.setFirstName("Ebi");
-//        user.setLastName("Snow");
-//        user.setEmail("test10@test.com");
-//        user.setPassword("56789");
-//        user.setDob(cal.getTime());
-//        user.setGender("Male");
-//
-//        userRepository.save(user);
-//    }
+    @Test
+    void testCreate() throws ParseException {
+        User user = new User();
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(1996, Calendar.SEPTEMBER, 12);
+
+        user.setFirstName("Ebi");
+        user.setLastName("Snow");
+        user.setEmail("test10@test.com");
+        user.setPassword("56789");
+        user.setDob(cal.getTime());
+        user.setGender("Male");
+
+        userRepository.save(user);
+    }
 
     @Test
     void testCreatePost() {

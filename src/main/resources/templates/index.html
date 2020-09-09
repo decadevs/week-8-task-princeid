@@ -16,13 +16,14 @@
     <div class="container">
         <div class="body">
             <br><br><br><br><br><br>
-            <form  action="#" th:action="@{/savePost}" th:object="${post}"  method="post">
-                <div class="post-field">
-                    <textarea th:field="*{postMessage}" class="text-post" name="message" id="text" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
-                </div>
-                <button type="submit">post</button>
-            </form>
+<!--            <form  action="#" th:action="@{/savePost}" th:object="${post}"  method="post">-->
+<!--                <div class="post-field">-->
+<!--                    <textarea th:field="*{postMessage}" class="text-post" name="message" id="text" cols="30" rows="10" placeholder="What's on your mind?"></textarea>-->
+<!--                </div>-->
+<!--                <button type="submit">post</button>-->
+<!--            </form>-->
             <br>
+
             <h2>Feed</h2>
                 <div class="post-block" th:each="post : ${listPosts}">
                     <div class="pad-left time"><span th:text="${post.timeOfPost}"></span><span class="pad-right"></span></div>
