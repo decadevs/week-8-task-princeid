@@ -1,0 +1,104 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../static/style.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Mini-facebook</title>
+</head>
+
+<body class="bg-light">
+
+<div class="container h-100">
+
+    <div class="d-md-flex flex-md-row justify-content-between mt-5 align-items-center">
+        <div class="mr-3 align-middle">
+            <h2 style="font-size: 4rem;" class="text-primary text-monospace font-weight-bolder">My facebook</h2>
+            <p style="font-size: 1.5rem;">My facebook helps to connect and share with the people in your life.</p>
+        </div>
+        <div class="card align-middle" id="singInCard" style="width: 22rem;">
+            <div class="card-body text-center">
+                <form action="" method="post" class="mb-2 text-muted">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group"></div>
+
+                    <button type="submit" value="Login" class="btn btn-primary btn-lg btn-block">Sign In</button>
+                </form>
+                <div class="card-footer bg-transparent border-secondary">
+                    <button type="submit" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#signUpForm">Register</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="signUpForm" tabindex="-1" aria-labelledby="signUpForm" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h5 class="modal-title" id="itsEasy">Sign Up</h5>
+                    <p>It's quick and easy.</p>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" class="mb-2 text-muted">
+                    <div class="row form-group">
+                        <div class="col">
+                            <input type="text" class="form-control" name="firstName" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="lastName" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group form-row">
+                        <div class="col">
+                            <input type="date" class="form-control" name="dob" placeholder="Date of Birth">
+                        </div>
+                        <div class="col">
+                            <select class="custom-select mr-sm-2" name="gender" id="inlineFormCustomSelect">
+                                <option selected>Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="fixed-bottom d-sm-flex h-10 justify-content-center mb-3">Designed by Prince. All rights reserved &copy; 2020.</div>
+
+</div>
+
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</html>
